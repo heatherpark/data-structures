@@ -22,14 +22,11 @@ var LinkedList = function() {
 
   list.contains = function(target) {
     var currentLink = list.head;
-    while (currentLink.next !== null) {
+    while (currentLink) {
       if (currentLink.value === target) {
         return true;
       }
       currentLink = currentLink.next;
-    }
-    if (currentLink.value === target) {
-      return true;
     }
     return false;
   };
