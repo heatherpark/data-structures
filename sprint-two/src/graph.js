@@ -57,4 +57,12 @@ Graph.prototype.Node = function(value) {
  * Complexity: What is the time complexity of the above functions?
  */
 
+ // addNode() is constant
+ // contains() is constant
+ // removeNode() is constant
+ // hasEdge() is constant
+ // addEdge() is constant
+ // removeEdge() is constant
+ // forEachNode() is linear
+
 
