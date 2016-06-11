@@ -2,6 +2,19 @@ describe('hashTable', function() {
   var hashTable;
   var people = [['Steven', 'Tyler'], ['George', 'Harrison'], ['Mr.', 'Doob'], ['Dr.', 'Sunshine'], ['John', 'Resig'], ['Brendan', 'Eich'], ['Alan', 'Turing']];
 
+  console.log(getIndexBelowMaxForKey('Steven', 8));
+  console.log(getIndexBelowMaxForKey('George', 8));
+  console.log(getIndexBelowMaxForKey('Mr.', 8));
+  console.log(getIndexBelowMaxForKey('Dr.', 8));
+  console.log(getIndexBelowMaxForKey('John', 8));
+
+  console.log(getIndexBelowMaxForKey('Steven', 16));
+  console.log(getIndexBelowMaxForKey('George', 16));
+  console.log(getIndexBelowMaxForKey('Mr.', 8));
+  console.log(getIndexBelowMaxForKey('Dr.', 16));
+  console.log(getIndexBelowMaxForKey('John', 16));
+  console.log(getIndexBelowMaxForKey('Brendan', 16));
+  console.log(getIndexBelowMaxForKey('Alan', 16));
 
   beforeEach(function() {
     hashTable = new HashTable();
